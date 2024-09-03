@@ -1,0 +1,15 @@
+CORS 
+O cors é um mecanismo utilizado para adicionar cabeçalhos HTTP que informama aos nave3gadores para permitir que
+uma aplicação Web seja executada em uma origem e acesse recursos de outra origem diferente. Esse tipo de ação 
+é chamada de requisição  cross-origin HTTP.
+
+classe record 
+É uma classe imutavel contendo apenas atributos, construtor e métodos de leitura, de uma maneira muito simples e enxuta.
+
+Inserir dependencias no pom.xml
+
+Qunado instalo o "data JPA" o spring tenta por padrão acessar o banco de dados
+
+o arquivo aplication.properties é onde ficam os acessos ao banco de dados
+se o spring nao achar os drives do sql, rodar esse comando no aplication.propertiers
+#spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
