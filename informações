@@ -13,3 +13,10 @@ Qunado instalo o "data JPA" o spring tenta por padrão acessar o banco de dados
 o arquivo aplication.properties é onde ficam os acessos ao banco de dados
 se o spring nao achar os drives do sql, rodar esse comando no aplication.propertiers
 #spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+é bom ter o controle no banco de dados
+é bom usar as migrações
+
+flyway faz o controle das tabelas no banco de dados
+
+Todas as vezes que for mexer em migrations , lembrar de parar o projeto!
