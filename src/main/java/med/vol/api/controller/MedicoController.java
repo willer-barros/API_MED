@@ -32,7 +32,7 @@ public class MedicoController {
 
     @GetMapping
     public Page<DadosListagemMedico> listar(@PageableDefault(size=10, sort = {"nome"})  Pageable paginacao){
-        return repository.findAll(paginacao).map(DadosListagemMedico::new);
+        return repository.findAllByAtivoTrue(paginacao).map(DadosListagemMedico::new);
     }
 
     
@@ -46,7 +46,8 @@ public class MedicoController {
     @DeleteMapping("/{id}")  //o pathvariable eh quem faz a ligacao entre o id que foi declarado como complemento da url e o id do metodo
     @Transactional
     public void excluir(@PathVariable Long id){
-        repository.deleteById(id);
+        var medico = repository.getReferenceById(id);
+        medico.excluir();
     }
 
 
